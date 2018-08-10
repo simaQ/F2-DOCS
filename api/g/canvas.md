@@ -12,23 +12,24 @@ Canvas Renderer constructor.
 
 | Attribute | Type | Description |
 | :--- | :--- | :--- |
-| `el` | String/HtmlElement | The id of the canvas dom or canvas dom instance. |
+| `el` | String/HtmlElement | Container selector or DOM element |
 | `context` | CanvasRenderingContext2D | The context of the canvas. |
-| `width` | Number | Optional, width of the canvas. If it is omitted, the actual width of the canvas is used by default. |
-| `height` | Number | Optional, height of the canvas. If it is omitted, the actual height of the canvas is used by default. |
-| `pixelRatio` | Number | The display  pixel ratio of the canvas, `window.devicePixelRatio` is used by default. |
+| `width` | Number | Optional, width of the canvas. If it is omitted, the actual width of the canvas DOM is used by default. |
+| `height` | Number | Optional, height of the canvas. If it is omitted, the actual height of the canvas DOM is used by default. |
+| `pixelRatio` | Number | F2 automatically handles pixel ratio adjustments in order to render crisp drawings on all devices. Unless otherwise specified, the pixel ratio will be defaulted to the actual device pixel ratio: `window.devicePixelRatio`. You can override the device pixel ratio for special situations, or, if you don't want the pixel ratio to be taken into account, you can set it to 1. |
 
-#### Properties
+Example:
 
-* [children](https://github.com/antvis/f2/blob/better-docs/docs/en-us-bak/api/g.md#_children)
-* [destroyed](https://github.com/antvis/f2/blob/better-docs/docs/en-us-bak/api/g.md#_destroyed)
+```javascript
+const canvas = new Canvas({
+  id: 'canvas',
+  width: 500,
+  height: 500,
+  pixelRatio: 1
+});
+```
 
-After a Canvas instance is created, we can use method `canvas.get('children')` to get properties.
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| children | Array | The elements contained in the container |
-| destroyed | Boolean | Wether the canvas instance is destroyed. |
 
 #### Methods
 
@@ -41,7 +42,7 @@ After a Canvas instance is created, we can use method `canvas.get('children')` t
  * Get width of the canvas
  * @return {Number} Corresponding width
  */
-getWidth()	
+getWidth()
 ```
 
 **getHeight\(\)**

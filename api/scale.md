@@ -74,7 +74,7 @@ chart.source(data, {
 });
 ```
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](../.gitbook/assets/image%20%2819%29.png)
 
 Except for the above general configuration properties, different scale types have different configuration items.
 
@@ -122,7 +122,7 @@ Cat scale has no other configuration items. But we will introduce the usage of `
 
         We use the following data to draw a bar chart:
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2830%29.png)
 
 ```javascript
   const data = [
@@ -183,7 +183,7 @@ After set this, the bar chart will be rendered as follow:
   chart.render();
 ```
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 **3. Control the display of data.**
 
@@ -209,7 +209,7 @@ Case 1: we just have 3 items in data, but we can set 10 ticks on the axis:
   chart.render();
 ```
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 Case 2: we just have 3 items in data, but we can just want to display one:
 
@@ -233,7 +233,7 @@ Case 2: we just have 3 items in data, but we can just want to display one:
   chart.render();
 ```
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
 ### TimeCat
 

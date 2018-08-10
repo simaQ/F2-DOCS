@@ -44,7 +44,7 @@ const { G } = F2;
 
 ### Quick Look
 
-
+![](../../.gitbook/assets/image%20%2817%29.png)
 
 ```javascript
 <script src="https://unpkg.com/@antv/f2"></script>
@@ -56,8 +56,12 @@ const { G } = F2;
       width: 200,
       height: 100
     }); // create a canvas instance
-    const container = canvas.addGroup(); // add a group to canvas 
-    const itemGroup = container.addGroup(); // add a group to container 
+    const container = canvas.addGroup({
+      zIndex: 2
+    }); // add a group to canvas 
+    const itemGroup = container.addGroup({
+      zIndex: 1
+    }); // add a group to container 
     itemGroup.addShape('circle', {
       attrs: {
         x: 5,
@@ -79,15 +83,18 @@ const { G } = F2;
     }); // add text to group
     const bbox = itemGroup.getBBox(); // get the bounding box of the group in order to calculate the display position of other graphs
     container.addShape('rect', {
-      zIndex: -1,
+      zIndex: 0,
       attrs: {
         x: bbox.minX - 5,
         y: bbox.minY - 5,
         width: bbox.width + 10,
         height: bbox.height + 10,
-        fill: 'rgba(0, 0, 0, 0.09)'
+        fill: 'rgba(0, 0, 0, 0.09)',
+        radius: 4
       }
     }); // add a rectangle
+    container.sort(); // sort by zIndex.
+    container.moveTo(30, 50); // move the container to (30, 50)
     
     canvas.addShape('rect', {
       zIndex: 0,
@@ -96,12 +103,12 @@ const { G } = F2;
         y: 0,
         width: 200,
         height: 100,
-        fill: 'rgba(0, 0, 0, 0.09)'
+        fill: 'rgba(0, 0, 0, 0.09)',
+        radius: 4
       }
     }); // add a rectangle
     
-    container.sort(); // sort by zIndex.
-    container.moveTo(30, 50); // move the container to (30, 50)
+    canvas.sort();
     canvas.draw(); // draw
 </script>
 ```

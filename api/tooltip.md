@@ -64,7 +64,7 @@ chart.tooltip({
 
 The picture below shows the structure of tooltip content, it includes title and a group of items, each item consists of marker, name and value.
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](../.gitbook/assets/image%20%2820%29.png)
 
 The tooltip items passed to the tooltip `onShow` , `onChange`, `onHide` callbacks implement the following interface:
 
@@ -222,7 +222,7 @@ chart.tooltip({
 
 We also can define a html tooltip, like this, see demo and code [here](https://antv.alipay.com/zh-cn/f2/3.x/demo/tooltip/custom.html):
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](../.gitbook/assets/image%20%2834%29.png)
 
 ```javascript
 chart.tooltip({
