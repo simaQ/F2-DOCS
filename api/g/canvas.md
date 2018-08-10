@@ -1,38 +1,14 @@
-# G
-
-`G` is the renderer engine of F2, it has following feature:
-
-1. Hierarchical structure
-2. Supports the creation, modification and destruction of the groups and shapes.
-3. Animation
-4. Matrix transformation.
-
-![](../.gitbook/assets/untitled-diagram-1.png)
-
-* Canvas is the entrance, it includes all the Group and Shape objects;
-* Group can contains Group and Shape Objects
-* G offers a variety of Shape types
-
-### How to Get `G` 
-
-```javascript
-const F2 = require('@antv/f2');
-const { G } = F2;
-
-const { Canvas, Group, Shape, Matrix, Vector2 } = G;
-```
+# Canvas
 
 ### `Canvas`
-
-Create a  `Canvas` instance.
 
 ```javascript
 new Canvas(config);
 ```
 
-- parameter:  `config` 
+Canvas Renderer constructor.
 
-Type: Object, the configuration needed to create a canvas object, it includes the following attributes:
+-  `config` : Object, the configuration needed to create a canvas object, it includes the following attributes:
 
 | Attribute | Type | Description |
 | :--- | :--- | :--- |
