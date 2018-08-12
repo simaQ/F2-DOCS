@@ -20,7 +20,6 @@
 | `shape` | Object | The default style configuration for different shapes. |
 | `sizes` | Array | The default size range for size mapping. |
 | `tooltip` | Object | The default tooltip configuration for tooltip. |
-| `trackable` | Boolean | See [F2.track\({Boolean}\)](https://antv.gitbook.io/f2/api#functions). |
 | `version` | String | The current version of F2.  |
 | `widthRatio` | Object | ratio of width for different shapes. |
 
