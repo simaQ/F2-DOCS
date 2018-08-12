@@ -135,7 +135,7 @@ chart.legend({
 
 The following code draws a marker shown below: 
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 ```javascript
 chart.legend('city', {
@@ -195,7 +195,7 @@ The Legend item implement the following interface，the image below will help yo
 
 For example, use the custom legend feature to define legend items as follows:
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 
 ```javascript
 chart.legend({

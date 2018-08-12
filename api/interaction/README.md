@@ -37,7 +37,5 @@ require('@antv/f2/lib/interaction/pan');
 require('@antv/f2/lib/interaction/pinch');
 ```
 
-
-
-
+> The touch gestures for interactions all base on [Hammer.js](http://hammerjs.github.io/).
 
