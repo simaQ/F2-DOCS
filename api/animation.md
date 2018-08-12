@@ -196,3 +196,7 @@ shape.animate()
   });
 ```
 
+### Example
+
+See demo [here](https://antv.alipay.com/zh-cn/f2/3.x/demo/line/animated-line.html).
+
