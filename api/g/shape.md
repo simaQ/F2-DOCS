@@ -307,12 +307,14 @@ Destroy the element itself, if it has a parent, remove it from parent.
 ### Shape.Line
 
 ```javascript
-new Shape.Line(config)
+new Shape.Line({
+  attrs: {}
+})
 ```
 
 Line constructor.  
 
-* `config` : Object, it includes the following attributes:
+* `attrs` : Object, it includes the following attributes:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -347,12 +349,14 @@ const line = new G.Shape.Line({
 ### Shape.Arc
 
 ```javascript
-new Shape.Arc(config)
+new Shape.Arc({
+  attrs: {}
+})
 ```
 
 Arc constructor.  
 
-* `config` : Object, it includes the following attributes:
+* `attrs` : Object, it includes the following attributes:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -388,23 +392,292 @@ const arc = new G.Shape.Arc({
 ### Shape.Circle
 
 ```javascript
-new Shape.Circle(config)
+new Shape.Circle({
+  attrs: {}
+})
 ```
 
 Circle constructor.  
 
-* `config` : Object, it includes the following attributes:
+* `attrs` : Object, it includes the following attributes:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| x | Number |  |
-| y | Number |  |
-| r | Number |  |
-| fill | String/CanvasGradient/CanvasPattern |  |
-| fillStyle | String/CanvasGradient/CanvasPattern |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| `x` | Number | center's x coordinate |
+| `y` | Number | center's y coordinate |
+| `r` | Number | radius |
+| `fill` | String/CanvasGradient/CanvasPattern | the color or style to use inside shapes |
+| `fillStyle` | String/CanvasGradient/CanvasPattern | same as `fill` |
+| `fillOpacity` | Number | the opacity for `fill` style |
+| `stroke` | String/CanvasGradient/CanvasPattern | the color or style to use for the lines around shapes. |
+| `strokeStyle` | String/CanvasGradient/CanvasPattern | same as `stroke`. |
+| `strokeOpacity` | Number | the opacity for `stroke` style. |
+| `lineWidth` | Number | sets the thickness of lines in space units. See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `lineDash` | Array | An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of numbers which specify distances to alternately draw a line and a gap \(in coordinate space units\).See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `opacity` | Number | the alpha value that is applied to shapes and images before they are drawn onto the canvas. |
+
+Example:
+
+```javascript
+const circle = new G.Shape.Circle({
+  attrs: {
+    x: 10,
+    y: 10,
+    r: 50,
+    fill: 'red'
+  }
+});
+```
+
+### Shape.Polyline {#shape-circle}
+
+```text
+new Shape.Polyline({
+  attrs: {}
+})
+```
+
+Polyline constructor.
+
+* `attrs` : Object, it includes the following attributes:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `points` | Array | points array, which constructs the polyline. |
+| `smooth` | `Boolean` | Wether to draw a curve line, the default value is false. |
+| `stroke` | String/CanvasGradient/CanvasPattern | the color or style to use for the lines around shapes. |
+| `strokeStyle` | String/CanvasGradient/CanvasPattern | same as `stroke`. |
+| `strokeOpacity` | Number | the opacity for `stroke` style. |
+| `lineCap` | String | determines how the end points of every line are drawn.See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `lineJoin` | String | determines how two connecting segments.See Line Styl |
+| `lineWidth` | Number | sets the thickness of lines in space units. See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `lineDash` | Array | An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of numbers which specify distances to alternately draw a line and a gap \(in coordinate space units\).See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `opacity` | Number | the alpha value that is applied to shapes and images before they are drawn onto the canvas. |
+
+Example:
+
+```javascript
+const polyline = new G.Shape.Polyline({
+  attrs: {
+    points: [
+      { x: 10, y: 10 },
+      { x: 20, y: 45 },
+      { x: 40, y: 80 },
+      { x: 123, y: 70 },
+      { x: 80, y: 32 }
+    ],
+    smooth: true,
+    lineWidth: 1,
+    stroke: 'red'
+  }
+})
+```
+
+### Shape.Polygon
+
+```text
+new Shape.Polygon({
+  attrs: {}
+})
+```
+
+Polygon constructor.
+
+* `attrs` : Object, it includes the following attributes:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `points` | Array | points array, which constructs the polygon. |
+| `fill` | String/CanvasGradient/CanvasPattern | the color or style to use inside shapes |
+| `fillStyle` | String/CanvasGradient/CanvasPattern | same as `fill` |
+| `fillOpacity` | Number | the opacity for `fill` style |
+| `stroke` | String/CanvasGradient/CanvasPattern | the color or style to use for the lines around shapes. |
+| `strokeStyle` | String/CanvasGradient/CanvasPattern | same as `stroke`. |
+| `strokeOpacity` | Number | the opacity for `stroke` style. |
+| `lineWidth` | Number | sets the thickness of lines in space units. See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `lineDash` | Array | An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of numbers which specify distances to alternately draw a line and a gap \(in coordinate space units\).See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `opacity` | Number | the alpha value that is applied to shapes and images before they are drawn onto the canvas. |
+
+Example:
+
+```javascript
+const polygon = new G.Shape.Polygon({
+  attrs: {
+    points: [
+      { x: 10, y: 10 },
+      { x: 20, y: 45 },
+      { x: 40, y: 80 },
+      { x: 123, y: 70 },
+      { x: 80, y: 32 }
+    ], // the points the make up the polygon
+    lineWidth: 1,
+    fill: 'red'
+  }
+});
+```
+
+### Shape.Rect
+
+```text
+new Shape.Rect({
+  attrs: {}
+})
+```
+
+Rect constructor.
+
+* `attrs` : Object, it includes the following attributes:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `x` | Number | x coordinate of upper left point of the rectangle. |
+| `y` | Number | x coordinate of upper left point of the rectangle. |
+| `height` | Number | the height of rectangle. |
+| `width` | Number | the width of rectangle. |
+| `radius` | Number/Array | the border radius for rectangle. |
+| `stroke` | String/CanvasGradient/CanvasPattern | the color or style to use for the lines around shapes. |
+| `strokeStyle` | String/CanvasGradient/CanvasPattern | same as `stroke`. |
+| `strokeOpacity` | Number | the opacity for `stroke` style. |
+| `fill` | String/CanvasGradient/CanvasPattern | the color or style to use inside shapes. |
+| `fillStyle` | String/CanvasGradient/CanvasPattern | same as `fill`. |
+| `fillOpacity` | Number | the opacity for `fill` style. |
+| `lineWidth` | Number | sets the thickness of lines in space units. See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `lineDash` | Array | An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of numbers which specify distances to alternately draw a line and a gap \(in coordinate space units\).See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `opacity` | Number | the alpha value that is applied to shapes and images before they are drawn onto the canvas. |
+
+Example:
+
+```javascript
+const rect = new G.Shape.Rect({
+  attrs: {
+    x: 50,
+    y: 50,
+    height: 20,
+    width: 80,
+    lineWidth: 1,
+    fill: '#1890FF',
+    strokeStyle: '#000',
+    radius: 2
+  }
+});
+```
+
+The `radius` usage:
+
+![](../../.gitbook/assets/image%20%2826%29.png)
+
+### Shape.Sector
+
+```javascript
+new Shape.Sector({
+  attrs: {}
+})
+```
+
+Sector constructor.  
+
+* `attrs` : Object, it includes the following attributes:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `x` | Number | center's x coordinate |
+| `y` | Number | center's y coordinate |
+| `r` | Number | radius |
+| `r0` | Number | the inner radius |
+| `startAngle` | Number | start angle of sector, it should be a radian. |
+| `endAngle` | Number | end angle of sector, it should be a radian. |
+| `fill` | String/CanvasGradient/CanvasPattern | the color or style to use inside shapes |
+| `fillStyle` | String/CanvasGradient/CanvasPattern | same as `fill` |
+| `fillOpacity` | Number | the opacity for `fill` style |
+| `stroke` | String/CanvasGradient/CanvasPattern | the color or style to use for the lines around shapes. |
+| `strokeStyle` | String/CanvasGradient/CanvasPattern | same as `stroke`. |
+| `strokeOpacity` | Number | the opacity for `stroke` style. |
+| `lineWidth` | Number | sets the thickness of lines in space units. See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `lineDash` | Array | An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of numbers which specify distances to alternately draw a line and a gap \(in coordinate space units\).See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `opacity` | Number | the alpha value that is applied to shapes and images before they are drawn onto the canvas. |
+
+Example:
+
+```javascript
+const sector = new G.Shape.Sector({
+  attrs: {
+    x: 100, 
+    y: 150,
+    r: 50,
+    r0: 30, 
+    startAngle: -Math.PI / 3, 
+    endAngle: Math.PI / 2, 
+    lineWidth: 0, 
+    fill: '#223273' 
+  }
+});
+```
+
+### Shape.Text
+
+```javascript
+new Shape.Text({
+  attrs: {}
+})
+```
+
+Text constructor.  
+
+* `attrs` : Object, it includes the following attributes:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `x` | Number | x coordinate of the display position |
+| `y` | Number | y coordinate of the display position |
+| `text` | String | text content, if you want a text wrapping, just write '\n' in the text, such as 'maximum \n200'. |
+| `rotate` | Number | the rotate angle, it should be a radian. |
+| `fill` | String/CanvasGradient/CanvasPattern | the color or style to use inside shapes |
+| `fillStyle` | String/CanvasGradient/CanvasPattern | same as `fill` |
+| `fillOpacity` | Number | the opacity for `fill` style |
+| `stroke` | String/CanvasGradient/CanvasPattern | the color or style to use for the lines around shapes. |
+| `strokeStyle` | String/CanvasGradient/CanvasPattern | same as `stroke`. |
+| `strokeOpacity` | Number | the opacity for `stroke` style. |
+| `lineWidth` | Number | sets the thickness of lines in space units. See [Line Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#line-style). |
+| `opacity` | Number | the alpha value that is applied to shapes and images before they are drawn onto the canvas. |
+| `textAlign` | String | specifies the horizontal alignment of text in an element. See [Text Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#text-style). |
+| `textBaseline` | String | sets the vertical alignment of an element.See [Text Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#text-style). |
+| `fontStyle` | String | specifies the font style for text.See [Text Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#text-style). |
+| `fontSize` | String | specifies the font size of text.See [Text Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#text-style). |
+| `fontFamily` | String | specifies the font family for text.See [Text Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#text-style). |
+| `fontWeight` | String / Number | specifies the weight of a font.See [Text Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#text-style). |
+| `fontVariant` | String | specifies whether or not a text should be displayed in a small-caps font.See [Text Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#text-style). |
+| `lineHeight` | Number | specifies the height of a line. See [Text Style](https://antv.gitbook.io/f2/api/canvas-api-in-f2#text-style). |
+
+Example:
+
+```javascript
+const sector = new G.Shape.Text({
+  attrs: {
+    x: 30,
+    y: 30,
+    fontFamily: 'Arial',
+    fontSize: 12,
+    fontStyle: 'normal',
+    fontWeight: 'normal',
+    fontVariant: 'normal',
+    fill: 'red',
+    lineWidth: 1,
+    rotate: Math.PI
+  }
+});
+```
+
+#### Shape.Custom
+
+```javascript
+new Shape.Custom({
+  attrs: {},
+  createPath(context) {
+    // draw shape here
+  },
+  calculateBox() {
+    // calculate the bounding box
+  }
+});
+```
 

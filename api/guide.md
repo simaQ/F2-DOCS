@@ -185,7 +185,7 @@ The global options for the chart guide tag is defined in F2.Global.guide.tag.
   }
 ```
 
-![](../.gitbook/assets/image%20%2827%29.png)
+![](../.gitbook/assets/image%20%2828%29.png)
 
 #### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/tag.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/tag.html)
 

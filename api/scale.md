@@ -122,7 +122,7 @@ Cat scale has no other configuration items. But we will introduce the usage of `
 
         We use the following data to draw a bar chart:
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../.gitbook/assets/image%20%2831%29.png)
 
 ```javascript
   const data = [
