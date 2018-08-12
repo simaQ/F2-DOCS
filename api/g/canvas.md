@@ -33,31 +33,49 @@ const canvas = new Canvas({
 
 #### Methods
 
------------ 2018-08-09 ----------------------
+**getChildren\(\)**
 
-* **getWidth\(\)**
+```javascript
+/**
+ * Get the elements contained in the container
+ * @return {Array}
+ */
+getChildren()
+```
 
-```text
+**isDestroyed\(\)**
+
+```javascript
+/**
+ * Wether the object is destroyed.
+ * @return {Boolean}
+ */
+isDestroyed()
+```
+
+**getWidth\(\)**
+
+```javascript
 /**
  * Get width of the canvas
- * @return {Number} Corresponding width
+ * @return {Number}
  */
 getWidth()
 ```
 
 **getHeight\(\)**
 
-```text
+```javascript
 /**
- * Get height of the canvas's corresponding dom object
- * @return {Number} Corresponding height
+ * Get height of the canvas
+ * @return {Number}
  */
 getHeight()
 ```
 
 **changeSize\(width, height\)**
 
-```text
+```javascript
 /**
  * Change the size of the canvas
  * @param  {Number} width  
@@ -68,34 +86,34 @@ changeSize(width, height)
 
 **getPointByClient\(clientX, clientY\)**
 
-```text
+```javascript
 /**
- * Convert the coordinate on client window to coordinate on canvas
- * @param  {Number} clientX Coordinate of x-axis on client window
- * @param  {Number} clientY Coordinate of y-axis on client window
- * @return {Object} canvas Coordinate on canvas
+ * Convert the coordinate on browser to coordinate on canvas
+ * @param  {Number} clientX Coordinate of x-axis on browser
+ * @param  {Number} clientY Coordinate of y-axis on browser
+ * @return {Object}
  */
 getPointByClient(clientX, clientY)
 ```
 
 **addShape\(type, config\)**
 
-```text
+```javascript
 /**
  * Create a shape and add it to canvas
- * @param {String} type Type of shape to create and add
+ * @param {String} type Type of shape
  * @param {Object} config  Configuration of the shape
- * @return {Shape} The created shape instance
+ * @return {Shape}
  */
 addShape(type, config = {})
 ```
 
 The `config` parameter passed in is the configuration of the shape, includes:
 
-```text
+```javascript
 {
   className: String, // class name specified by users
-  zIndex: Number, // hierarchical index of the shape
+  zIndex: Number, // z-index of the shape
   visible: Boolean, // wether the shape is visible
   attrs: Object // graphic attributes of the shape, different shapes have different attributes, see Shape for more details.
 }
@@ -103,18 +121,18 @@ The `config` parameter passed in is the configuration of the shape, includes:
 
 **addGroup\(config\)**
 
-```text
+```javascript
 /**
  * Create and add a group
- * @param {Object||null} cfg Configuration for group
- * @return {Group} The created group instance
+ * @param {Object||Null} cfg Configuration for group
+ * @return {Group}
  */
 addGroup(config)
 ```
 
-The `config` parameter passed in is the configuration for Group, includes:
+`config` can be Null or Object, if the `config` is an object, passed in is the configuration for Group can be:
 
-```text
+```javascript
 {
   className: String, // user specified class name
   zIndex: Number, // hierarchical index of the group
@@ -124,31 +142,31 @@ The `config` parameter passed in is the configuration for Group, includes:
 
 **add\(items\)**
 
-```text
+```javascript
 /**
- * Add items to canvas
+ * Add elements to canvas
  * @param {Array||Group||Shape} Items can be a shape instance, a group instance, a shape array or a group array
- * @return {Canvas}  The current canvas object
+ * @return {Canvas}
  */
 add(items)
 ```
 
 **contain\(item\)**
 
-```text
+```javascript
 /**
  * Wether current canvas contains the item
  * @param  {Shape||Group} Item can be a shape instance or group instance
- * @return {Boolean} True means canvas contains the item, otherwise it's false.
+ * @return {Boolean}
  */
 contain(item)
 ```
 
 **sort\(\)**
 
-```text
+```javascript
 /**
- * Sort the elements in the container by their zIndexes, in descending order
+ * Sort the elements in the container by their zIndex, in descending order
  * @return {Canvas||Group} The container itself
  */
 sort()
@@ -156,11 +174,25 @@ sort()
 
 **get\(name\)**
 
-Get the attribute from canvas by attribute name
+```javascript
+/**
+ * Get the attribute from canvas by attribute name
+ * @param {String} name attribute name 
+ * @return {*} 
+ */
+get(name)
+```
 
 **set\(name, value\)**
 
-Set the attribute value for the corresponding attribute name.
+```javascript
+/**
+ * Set the attribute value for the corresponding attribute name
+ * @param {String} name attribute name 
+ * @param {String} value the value setting for the attribute 
+ */
+set(name, value)
+```
 
 **clear\(\)**
 
