@@ -8,7 +8,7 @@ new Canvas(config);
 
 Canvas Renderer constructor.
 
--  `config` : Object, the configuration needed to create a canvas object, it includes the following attributes:
+* `config` : Object, the configuration needed to create a canvas object, it includes the following attributes:
 
 | Attribute | Type | Description |
 | :--- | :--- | :--- |
@@ -21,15 +21,13 @@ Canvas Renderer constructor.
 Example:
 
 ```javascript
-const canvas = new Canvas({
+const canvas = new F2.G.Canvas({
   id: 'canvas',
   width: 500,
   height: 500,
   pixelRatio: 1
 });
 ```
-
-
 
 #### Methods
 
@@ -112,10 +110,10 @@ The `config` parameter passed in is the configuration of the shape, includes:
 
 ```javascript
 {
-  className: String, // class name specified by users
-  zIndex: Number, // z-index of the shape
-  visible: Boolean, // wether the shape is visible
-  attrs: Object // graphic attributes of the shape, different shapes have different attributes, see Shape for more details.
+  className: {String}, // class name specified by users
+  zIndex: {Number}, // z-index of the shape
+  visible: {Boolean}, // wether the shape is visible
+  attrs: {Object} // graphic attributes of the shape, different shapes have different attributes, see Shape for more details.
 }
 ```
 
@@ -134,8 +132,8 @@ addGroup(config)
 
 ```javascript
 {
-  className: String, // user specified class name
-  zIndex: Number, // hierarchical index of the group
+  className: {String}, // user specified class name
+  zIndex: {Number}, // hierarchical index of the group
   visible: Boolean // wether the group is visible
 }
 ```
