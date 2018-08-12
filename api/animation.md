@@ -71,9 +71,9 @@ The configurable properties for `appear`, `enter`, `update` and `leave` are as f
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| `animation` | String / Function | It is the animation action which can be specific with a string, in this way, you are using the animation provided by F2 \(see below，todo\). Or be a Function\(todo\) for customizing. |
-| `easing` | String / Function | easing action for animation.You can use the default easing functions provided by F2 or pass the function directly. See below\(todo\). |
-| `delay` | Number / Function | delay time for animation, in millisecond.You can specify delay time directly or pass a callback\(todo\). |
+| `animation` | String / Function | It is the animation action which can be specific with a string, in this way, you are using the animation provided by F2 \(see [below](https://antv.gitbook.io/f2/api/animation#default-animations)\). Or be a [Function](https://antv.gitbook.io/f2/api/animation#animation-callback) for customizing. |
+| `easing` | String / Function | easing action for animation.You can use the [default easing functions](https://antv.gitbook.io/f2/api/animation#default-easing) provided by F2 or pass the function directly, see [callback](https://antv.gitbook.io/f2/api/animation#easing-callback). |
+| `delay` | Number / Function | delay time for animation, in millisecond.You can specify delay time directly or pass a [callback](https://antv.gitbook.io/f2/api/animation#delay-callback). |
 | `duration` | Number | duration of the animation, in millisecond. |
 
 Example:
