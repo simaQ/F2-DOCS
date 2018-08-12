@@ -667,7 +667,7 @@ const sector = new G.Shape.Text({
 });
 ```
 
-#### Shape.Custom
+### Shape.Custom
 
 ```javascript
 new Shape.Custom({
@@ -680,4 +680,6 @@ new Shape.Custom({
   }
 });
 ```
+
+Custom shape constructor.  
 
