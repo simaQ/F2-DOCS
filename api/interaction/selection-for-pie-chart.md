@@ -55,7 +55,7 @@ onEnd(ev) {
 }
 ```
 
-### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/pie-select.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/pie-select.html)
+### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-pie-chart.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-pie-chart.html)
 
 
 

@@ -1,6 +1,6 @@
 # Selection for Bar Chart
 
-![](../../.gitbook/assets/bar.gif)
+![](../../.gitbook/assets/ezgif.com-video-to-gif-5.gif)
 
 ### How to use
 
@@ -72,5 +72,5 @@ onEnd(ev) {
 }
 ```
 
-### Demo:[https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/interval-select.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/interval-select.html)
+### Demo:[https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-bar-chart.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-bar-chart.html)
 

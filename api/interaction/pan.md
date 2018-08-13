@@ -1,6 +1,6 @@
 # Pan
 
-![](../../.gitbook/assets/pan.gif)
+![](../../.gitbook/assets/ezgif.com-video-to-gif.gif)
 
 Based on `pan`  gesture\( from [Hammer.js](http://hammerjs.github.io/recognizer-pan/)\), it also provides `press`  gesture to trigger the interaction of the tooltip.
 
@@ -44,7 +44,9 @@ chart.interaction('pan', {
 
 ### Demo
 
-* [pan on x-axis](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/x-pan.html)
-* [bar chart pan](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/steps-pan.html)
-* [pan on xy-axis](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/xy-pinch-pan.html)
+* [pan for line chart](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/pan-for-line-chart.html)
+* [pan for bar chart](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/pan-for-bar-chart.html)
+* [pinch and pan for scatter chart](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/pinch-and-pan-for-scatter-chart.html)
+
+
 

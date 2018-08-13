@@ -1,6 +1,6 @@
 # Pinch
 
-![](../../.gitbook/assets/pinch.gif)
+![](../../.gitbook/assets/ezgif.com-video-to-gif-1.gif)
 
 Based on `pinch`  gesture\( from [Hammer.js](http://hammerjs.github.io/recognizer-pinch/)\), it also provides `press`  gesture to trigger the interaction of the tooltip.
 
@@ -44,7 +44,7 @@ chart.interaction('pinch', {
 
 ### Demo
 
-* [pinch on x-axis](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/x-pinch-pan.html)
-* [pinch on xy-axis](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/xy-pinch-pan.html)
-* [pinch for time type data](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/timecat-pinch-pan.html)
+* [pinch on x-axis](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/pinch-and-pan-for-smooth-line.html)
+* [pinch on xy-axis](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/pinch-and-pan-for-scatter-chart.html)
+* [pinch for time type data](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/pinch-and-pan-for-line-chart.html)
 
