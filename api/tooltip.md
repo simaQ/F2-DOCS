@@ -299,5 +299,11 @@ chart.tooltip({
 
 ### More Demos
 
-**Please see** [**here**](https://antv.alipay.com/zh-cn/f2/3.x/demo/index.html#_Tooltip-%E4%BD%BF%E7%94%A8)**.**
+| Demo | demo |
+| :--- | :--- |
+| [HTML tooltip](https://gw.alipayobjects.com/zos/rmsportal/GXqFyFmzhrVvJeWNSHDL.png) | ![](https://gw.alipayobjects.com/zos/rmsportal/GXqFyFmzhrVvJeWNSHDL.png) |
+| [showTooltip\(\)](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/tooltip-showTooltip.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/xxBHLpazEZJgfEkSrdZj.png) |
+| [styling](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/tooltip-style.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/oLwGTmcnQLqzvfigSwoO.png) |
+| [tooltip with title](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/tooltip-showTitle.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/AdLPFtRaMxXIATwBAKKx.png) |
+| [vertical layout](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/tooltip-layout.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/tKpCnCjXUrfMaYTPLLnO.png) |
 

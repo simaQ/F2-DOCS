@@ -281,5 +281,12 @@ chart.legend({
 
 ### More Legend Demos
 
-Please see [here](https://antv.alipay.com/zh-cn/f2/3.x/demo/index.html#_Legend-%E4%BD%BF%E7%94%A8).
+| Demos |  |
+| :--- | :--- |
+| [top-center legend](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/legend-align.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/GeegjFfFxXHMWnbPBGJz.png) |
+| [legend style](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/legend-custom-text-style.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/aqzSeuHSkITDSNazLptD.png) |
+| [custom legend that can be clicked](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/legend-custom.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/jyCzuJAUavxZEyeLXohP.png) |
+| [marker](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/legend-marker.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/lzGYAheYCrbbgeXFVNqQ.png) |
+| [single mode](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/legend-single-selected.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/jmLNmcJDUIGoExwlRLob.png) |
+| [right-top legend](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/legend-vertical-align.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/iAhLZupiXHwGsHzvyKBH.png) |
 

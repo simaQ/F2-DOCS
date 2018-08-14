@@ -139,7 +139,15 @@ chart.axis('value', {
 
 ![](../.gitbook/assets/image%20%289%29.png)
 
-### More Axis Configuration Demos
+### More Axis Configuration DemosD
 
-See [Axis Configuration](https://antv.alipay.com/zh-cn/f2/3.x/demo/index.html#_%E5%9D%90%E6%A0%87%E8%BD%B4-%E4%BD%BF%E7%94%A8).
+| Demo |  |
+| :--- | :--- |
+| [label, break line](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/axis-break-line.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/DEwVBFoGLbnMrwHxauyp.png) |
+| [label rotate](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/axis-rotate.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/aZQMEqhJsZrHBPVvfwVu.png) |
+| [label callback](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/axis-label-callback.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/JNURaLRrBdyAFOgatkwO.png) |
+| [grid style configuration](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/axis-grid.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/WgyBJAgRVIwsjaIyPhvA.png) |
+| [grid callback](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/axis-grid-callback.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/dWXDCtnpVQFhvhtgSmWy.png) |
+| [circle grid](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/axis-circle-grid.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/CnTYvcQBFcUeWmcKutse.png) |
+| [iconfont label](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/axis-iconfont.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/wBAMqyEGjiKXvVfkAzSr.png) |
 

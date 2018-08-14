@@ -104,7 +104,7 @@ The global options for the chart guide line is defined in F2.Global.guide.line.
 | `end` | Array/Function |  | Ending point of guide line, use the same way as `start.` |
 | `style` | Object |  | Style for guide line, see Canvas\(todo\) for more details. |
 
-#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/line.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/line.html)
+#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-line.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-line.html)
 
 ### Text
 
@@ -187,7 +187,7 @@ The global options for the chart guide tag is defined in F2.Global.guide.tag.
 
 ![](../.gitbook/assets/image%20%2828%29.png)
 
-#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/tag.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/tag.html)
+#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-tag.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-tag.html)
 
 ### Rect
 
@@ -217,7 +217,7 @@ The global options for the chart guide rect is defined in F2.Global.guide.rect.
 | `end` | Array/Function |  | Ending position of the guide tag, see detail usage [here](https://antv.gitbook.io/f2/api/guide#start-end-position-usage). |
 | `style` | Object |  | rect box style |
 
-#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/rect.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/rect.html)
+#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-rect.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-rect.html)
 
 ### Point
 
@@ -249,7 +249,7 @@ The global options for the chart guide point is defined in F2.Global.guide.point
 | `offsetX` | Number | 0 | offset of guide point in x-axis |
 | `offsetY` | Number | 0 | offset of guide point in y-axis |
 
-#### Demo:  TODO
+#### Demo:  [https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-point.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-point.html)
 
 ### Arc
 
@@ -280,7 +280,7 @@ The global options for the chart guide arc is defined in F2.Global.guide.arc.
 | `end` | Array/Function |  | ending position of the guide arc, see detail usage [here](https://antv.gitbook.io/f2/api/guide#start-end-position-usage). |
 | `style` | Object |  | arc style |
 
-#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/arc.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/arc.html)
+#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-arc.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-arc.html)
 
 ### RegionFilter
 
@@ -305,7 +305,7 @@ The global options for the chart guide regionFilter is defined in F2.Global.guid
 | `color` | String |  | the filled color for the filtered region. |
 | `style` | Object |  | additional style settings for the shape in the filter region. |
 
-#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/regionFilter.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/regionFilter.html)
+#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-regionFilter.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-regionFilter.html)
 
 ### Html
 
@@ -334,7 +334,7 @@ The global options for the chart guide html is defined in F2.Global.guide.html.
 | `offsetX` | Number | 0 | offset of the guide html in x-axis |
 | `offsetY` | Number | 0 | offset of the guide html in y-axis |
 
-#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/html.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/guide/html.html)
+#### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-html.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-html.html)
 
 #### `start` , `end` , `position` usage
 
@@ -385,9 +385,29 @@ chart.guide().line({
 });
 ```
 
+### Repaint a guide component
+
+`guide.repaint()`
+
+```javascript
+const guide = chart.guide().text({
+  position: [ 'min', 'median' ],
+  content: '12345'
+});
+
+chart.render();
+
+// update guide configuration
+guide.position = [ '50%', '50%' ];
+guide.content = 12;
+guide.repaint();
+```
+
 ### How to clear guides
 
 ```javascript
 chart.guide().clear();
 ```
+
+
 

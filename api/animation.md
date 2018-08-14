@@ -1,4 +1,4 @@
-# Animation
+# Animate
 
 The charts for mobile should be more vividness. So F2 provides an animation mechanism.
 
