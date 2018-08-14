@@ -195,7 +195,7 @@ The Legend item implement the following interface，the image below will help yo
 
 For example, use the custom legend feature to define legend items as follows:
 
-![](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
 ```javascript
 chart.legend({

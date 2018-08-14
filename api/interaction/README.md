@@ -39,3 +39,16 @@ require('@antv/f2/lib/interaction/pinch');
 
 > The touch gestures for interactions all base on [Hammer.js](http://hammerjs.github.io/).
 
+* call interaction
+
+```javascript
+chart.interaction('name', config);
+```
+
+* clear interaction
+
+```javascript
+chart.clearInteraction()       // clear all interactions for current chart instance
+chart.clearInteraction('name') // clear the interaction whose name is 'name'
+```
+
