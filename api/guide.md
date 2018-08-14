@@ -173,7 +173,7 @@ The global options for the chart guide tag is defined in F2.Global.guide.tag.
 
 #### `direct`
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 #### `backgroud` configuration
 
@@ -185,7 +185,7 @@ The global options for the chart guide tag is defined in F2.Global.guide.tag.
   }
 ```
 
-![](../.gitbook/assets/image%20%2828%29.png)
+![](../.gitbook/assets/image%20%2830%29.png)
 
 #### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-tag.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/guide-tag.html)
 

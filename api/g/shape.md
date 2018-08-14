@@ -564,7 +564,7 @@ const rect = new G.Shape.Rect({
 
 The `radius` usage:
 
-![](../../.gitbook/assets/image%20%2826%29.png)
+![](../../.gitbook/assets/image%20%2828%29.png)
 
 ### Shape.Sector
 
