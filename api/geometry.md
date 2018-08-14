@@ -35,6 +35,15 @@ Currently we support 7 geometry types：
 
 ## Properties
 
+```javascript
+chart.<geomType>({
+  generatePoints: {Boolean},
+  sortable: {Boolean},
+  startOnZero: {Boolean},
+  connectNulls: {Boolean}
+})
+```
+
 ### `generatePoints`
 
 * type: `Boolean`
@@ -53,7 +62,7 @@ chart.line({
 * description: Whether to sort the data according to the corresponding field of the x-axis, and sort it when true
 * default: `true` for area and line, other geometry types default to be false.
 
-**Note: When drawing a line or area chart, if your data has been sorted, you can set this property to `false` to improve processing performance.**
+**Note: When drawing a line or area chart, if your data has been sorted, you can set this property to `false` to improve performance.**
 
 ```javascript
 chart.line({

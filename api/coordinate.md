@@ -2,7 +2,7 @@
 
 F2 supports two kinds of coordinates, Cartesian coordinate and polar coordinate. Cartesian coordinate is used by default.
 
-### Setup Coordinate
+### Configuration
 
 #### Cartesian Coordinate
 
@@ -33,7 +33,7 @@ chart.coord('polar', {
 });
 ```
 
-### Get coordinate instance
+### Get Coordinate Instance
 
 ```javascript
 chart.get('coord')
@@ -50,6 +50,7 @@ If it is a cartesian coordinate instance, it will contain the following properti
 | `start` | Object | The starting point of the coordinate in canvas, the origin of the coordinate in F2 chart is located in the lower left corner. The value is like `{ x: 10, y: 10 }` |
 | `end` | Object | The position of upper right corner of the coordinate system in canvas. The value is like `{ x: 100, y: 100 }` |
 | `transposed` | Boolean | Wether the coordinate is transposed, true means it is transposed. |
+| `isRect` | Boolean | Indicating that it is a Cartesian coordinate. |
 
 #### Polar Coordinate
 

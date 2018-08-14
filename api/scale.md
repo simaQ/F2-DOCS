@@ -53,6 +53,12 @@ chart.scale('Population', {
 
 ### Common C**onfiguration**
 
+```javascript
+chart.scale('fieldName', {
+  // configurations
+})
+```
+
 The **common configuration** properties of  scale are described below：
 
 | **Name** | **Type** | **Default**  | **Description**  |
