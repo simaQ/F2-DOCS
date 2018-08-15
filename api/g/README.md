@@ -44,7 +44,7 @@ const { G } = F2;
 
 ### Quick Look
 
-![](../../.gitbook/assets/image%20%2819%29.png)
+![](../../.gitbook/assets/image%20%2820%29.png)
 
 ```javascript
 <script src="https://unpkg.com/@antv/f2"></script>

@@ -110,7 +110,7 @@ chart.axis('value', {
 
 ```
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 #### **Creating Custom Grid** 
 
@@ -137,7 +137,7 @@ chart.axis('value', {
 });
 ```
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 ### More Axis Configuration DemosD
 

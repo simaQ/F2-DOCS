@@ -1,6 +1,6 @@
 # ScrollBar
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../.gitbook/assets/image%20%2838%29.png)
 
 ScrollBar is a plugin for pan and pinch interaction, it will show the current data range.
 

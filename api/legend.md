@@ -101,7 +101,7 @@ chart.legend({
 
 #### Custom `maker`
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 The following describes the specific use of the `marker`：
 
@@ -135,7 +135,7 @@ chart.legend({
 
 The following code draws a marker shown below: 
 
-![](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
 ```javascript
 chart.legend('city', {
@@ -172,7 +172,7 @@ chart.legend({
 
 The Legend item implement the following interface，the image below will help you better understand:
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 ```javascript
 {
@@ -195,7 +195,7 @@ The Legend item implement the following interface，the image below will help yo
 
 For example, use the custom legend feature to define legend items as follows:
 
-![](../.gitbook/assets/image%20%2838%29.png)
+![](../.gitbook/assets/image%20%2839%29.png)
 
 ```javascript
 chart.legend({
