@@ -1,6 +1,6 @@
 # Data
 
-Data is the most basic part of drawing a chart. The data format supported by F2 is standard JSON array.
+F2's standard format of data is JSON Array.
 
 ### Data format
 
