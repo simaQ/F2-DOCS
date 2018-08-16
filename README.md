@@ -10,9 +10,7 @@ description: Introduction to F2
 
 F2 is a powerful **mobile** data visualization solution, pure in javascript. F2 is based on [**the grammar of graphics**](https://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/GOG.html), and it is light-weighted, high-performance and easily expandable. Also, F2 charts are well designed for mobile.
 
-TODO: website and demos' page
-
-TODO:  show some charts images here
+![](https://gw.alipayobjects.com/zos/rmsportal/wVwdXNiAQuoutCZYWnQh.gif)![](https://gw.alipayobjects.com/zos/rmsportal/CCJgoEHPhkRhYeNhSbHM.gif)![](https://gw.alipayobjects.com/zos/rmsportal/KumfgQonwUIWydfdgjhc.gif)![](https://gw.alipayobjects.com/zos/rmsportal/lXRXNwExVazcmpIJgbvR.gif)
 
 **Special thanks to** [**Leland Wilkinson**](https://en.wikipedia.org/wiki/Leland_Wilkinson)**, the author of** [_**The Grammar Of Graphics**_](https://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/GOG.html)**, whose book served as the foundation for F2 and G2.**
 
@@ -25,8 +23,16 @@ TODO:  show some charts images here
 
 ### Other runtime support
 
-* F2 on **Node.js** ：[https://antv.alipay.com/zh-cn/f2/3.x/tutorial/node-env.html](https://antv.alipay.com/zh-cn/f2/3.x/tutorial/node-env.html)
-* TODO: other runtime
+* [F2 on **Node.js**](platform.md)\*\*\*\*
+
+### Demos
+
+* [Chart Demos](https://antv.alipay.com/zh-cn/f2/3.x/demo/index.html)
+* [Gallery](https://codepen.io/collection/AOpMaW/)
+
+**Or see demos in mobile:**
+
+![](https://gw.alipayobjects.com/zos/rmsportal/nzlxIzUBlBRVGMyaZigG.png)
 
 ### Installation
 
@@ -36,7 +42,7 @@ $ npm install @antv/f2
 
 ### Getting Started
 
-![](.gitbook/assets/image%20%2828%29.png)
+![](.gitbook/assets/image%20%2829%29.png)
 
 ```markup
 <canvas id="c1"></canvas>

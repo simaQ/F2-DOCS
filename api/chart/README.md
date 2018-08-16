@@ -108,7 +108,7 @@ const chart = new F2.Chart({
 * description: The reserved spacing on the four sides of the chart canvas area, that is, we will add the `appendPadding` value to the four sides based on the padding. The default is 15 px.
 * default: 15
 
-![the red area corresponds to appendPadding, the yellow area ](../.gitbook/assets/group-2%20%281%29.png)
+![the red area corresponds to appendPadding, the yellow area ](../../.gitbook/assets/group-2%20%281%29.png)
 
 ### `pixelRatio`
 

@@ -1,10 +1,10 @@
 # Understanding F2 charts
 
-In order to better use F2 for data visualization, we need to understand the composition of F2 charts and related terms.
+In order to better use F2 for data visualization, we need to understand the composition of F2 charts and terms.
 
 ### F2 Charts
 
-In general, F2 chart includes Axis, Geometry, Tooltip, Legend, etc., and may also includes Guide, Annotations.
+In general, F2 chart includes Axis, Geometry, Tooltip, Legend, and may also includes Guide, Annotations.
 
 The basic components of F2 chart is shown below:
 

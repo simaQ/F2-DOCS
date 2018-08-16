@@ -2,7 +2,7 @@
 
 The picture below reveals the composition of our axes: 
 
-![](../.gitbook/assets/group-4%20%284%29.png)
+![](../../.gitbook/assets/group-4%20%284%29.png)
 
 ## The Axis Configuration
 
@@ -110,7 +110,7 @@ chart.axis('value', {
 
 ```
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../../.gitbook/assets/image%20%2817%29.png)
 
 #### **Creating Custom Grid** 
 
@@ -137,7 +137,7 @@ chart.axis('value', {
 });
 ```
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2812%29.png)
 
 ### More Axis Configuration DemosD
 

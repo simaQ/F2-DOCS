@@ -1,6 +1,6 @@
 # Pinch
 
-![](../../.gitbook/assets/ezgif.com-video-to-gif-1.gif)
+![](../../../.gitbook/assets/ezgif.com-video-to-gif-1.gif)
 
 Based on `pinch`  gesture\( from [Hammer.js](http://hammerjs.github.io/recognizer-pinch/)\), it also provides `press`  gesture to trigger the interaction of the tooltip.
 

@@ -1,6 +1,6 @@
 # Pan
 
-![](../../.gitbook/assets/ezgif.com-video-to-gif.gif)
+![](../../../.gitbook/assets/ezgif.com-video-to-gif.gif)
 
 Based on `pan`  gesture\( from [Hammer.js](http://hammerjs.github.io/recognizer-pan/)\), it also provides `press`  gesture to trigger the interaction of the tooltip.
 

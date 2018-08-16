@@ -71,7 +71,7 @@ If it is a polar coordinate instance, it will contain the following properties:
 
 #### Donut Chart
 
-![](../.gitbook/assets/image.png)
+![](../../.gitbook/assets/image.png)
 
 ```javascript
 const data = [
@@ -105,7 +105,7 @@ chart.render();
 
 #### Draw a semicircle pie chart
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../../.gitbook/assets/image%20%281%29.png)
 
 ```javascript
 const data = [

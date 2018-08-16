@@ -1,4 +1,4 @@
-# F2 in Node
+# F2 in Node.js
 
 Although F2 is based on Html5 Canvas, but for the current runtime environment, as long as it provides the same context interface as HTML5 Canvas does, F2 can still be able to run correctly.
 

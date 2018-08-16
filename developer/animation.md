@@ -97,7 +97,7 @@ F2 also provides a `cacheShape` attribute for the shape instance in the update s
   }
   ```
 
-* `coord`: Coordinate object, represents the current coordinate of the chart. The attributes contained in coordinate object are listed in [Coordinate API](../api/coordinate.md).
+* `coord`: Coordinate object, represents the current coordinate of the chart. The attributes contained in coordinate object are listed in [Coordinate API](../api/chart/coordinate.md).
 
 ### Example
 

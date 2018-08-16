@@ -102,7 +102,7 @@ chart.line({
 
 | `connectNulls: true` | `connectNulls: false` |
 | :--- | :--- |
-| [![](../.gitbook/assets/2.png)](https://camo.githubusercontent.com/a03204b2b0ff11bd440af83602676ca785f38278/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f5a5171775543637a616c724b71476761674f56702e706e67) | [![](../.gitbook/assets/1.png)](https://camo.githubusercontent.com/f18b3a9ff0994c86ebdbae3f2903915fbef9d237/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f795073776b615876557043594f64686f634777422e706e67) |
+| [![](../../.gitbook/assets/2.png)](https://camo.githubusercontent.com/a03204b2b0ff11bd440af83602676ca785f38278/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f5a5171775543637a616c724b71476761674f56702e706e67) | [![](../../.gitbook/assets/1.png)](https://camo.githubusercontent.com/f18b3a9ff0994c86ebdbae3f2903915fbef9d237/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f795073776b615876557043594f64686f634777422e706e67) |
 
 ## Methods
 
@@ -133,7 +133,7 @@ chart.interval().position('fruit*price');
 chart.render();
 ```
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../../.gitbook/assets/image%20%2838%29.png)
 
 ### `color()`
 
@@ -197,7 +197,7 @@ chart.point().position('x*y').color('red'); // all points are mapped to red
 
 * Colors can also be a callback function, the parameters of the callback are the data field values. If the function is going to map multiple data fields, parameters will be passed in the declared order, for example:
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../../.gitbook/assets/image%20%2816%29.png)
 
 ```javascript
 const data = [
@@ -282,7 +282,7 @@ chart.point().position('x*y').shape('rect'); // all the points's shapes are rect
 
   * `shapes` can also be a callback function, the parameters of the callback are the data field values. If the function is going to map multiple data fields, parameters will be passed in the declared order, for example:
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../../.gitbook/assets/image%20%2814%29.png)
 
 ```javascript
 const data = [
@@ -363,7 +363,7 @@ chart.interval().adjust([{
 }]);
 ```
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../../.gitbook/assets/image%20%2815%29.png)
 
 ```javascript
   const data =[

@@ -1,6 +1,6 @@
 # Tooltip
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../../.gitbook/assets/image%20%285%29.png)
 
 ### How to Register Tooltip Plugin
 
@@ -64,7 +64,7 @@ chart.tooltip({
 
 The picture below shows the structure of tooltip content, it includes title and a group of items, each item consists of marker, name and value.
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../../.gitbook/assets/image%20%2824%29.png)
 
 The tooltip items passed to the tooltip `onShow` , `onChange`, `onHide` callbacks implement the following interface:
 
@@ -187,7 +187,7 @@ Custom tooltips allow you to hook into the tooltip rendering process so that you
 
 On mobile, in order to make better use of the screen size, the tooltip and legend are often combined in the chart design. Like this:
 
-![](../.gitbook/assets/gif1111%20%281%29.gif)
+![](../../.gitbook/assets/gif1111%20%281%29.gif)
 
 In F2, we can use  a custom tooltip to implement, see demo and code [here](https://antv.alipay.com/zh-cn/f2/3.x/demo/line/series.html): 
 
@@ -222,7 +222,7 @@ chart.tooltip({
 
 We also can define a html tooltip, like this, see demo and code [here](https://antv.alipay.com/zh-cn/f2/3.x/demo/tooltip/custom.html):
 
-![](../.gitbook/assets/image%20%2840%29.png)
+![](../../.gitbook/assets/image%20%2841%29.png)
 
 ```javascript
 chart.tooltip({
@@ -251,7 +251,7 @@ chart.tooltip({
 
 Or Like this, combine with Guide.Html and Tooltip,  see demo and code [here](https://antv.alipay.com/zh-cn/f2/3.x/demo/line/customize-tootlip.html):
 
-![](../.gitbook/assets/gif1111.gif)
+![](../../.gitbook/assets/gif1111.gif)
 
 ```javascript
 chart.guide().html({

@@ -1,6 +1,6 @@
 # Selection for Pie Chart
 
-![](../../.gitbook/assets/pie.gif)
+![](../../../.gitbook/assets/pie.gif)
 
 ### How to use
 
@@ -25,7 +25,8 @@ chart.interaction('pie-select', {
   style: {Object},
   cancelable: {Boolean},
   onStart: {Function},
-  onEnd: {Function}
+  onEnd: {Function},
+  defaultSelected: {Object}
 });
 ```
 
@@ -39,6 +40,7 @@ chart.interaction('pie-select', {
 | `cancelable` | Boolean | true | After the shape is selected, click again to allow unchecked. The default is true, indicating that it will be unchecked. |
 | `onStart` | Function | null | The callback after the start event is triggered. |
 | `onEnd` | Function | null | The callback after the event\('touchend'\) is triggered.  |
+| `defaultSelected` | Object | null | If you want shape to be selected when chart inited, you can pass in the shape value to `defaultSelected`, see [demo](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-pie-chart.html). |
 
 #### `onEnd` callback
 
@@ -55,7 +57,9 @@ onEnd(ev) {
 }
 ```
 
-### Demo: [https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-pie-chart.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-pie-chart.html)
+### Demo
+
+url: [https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-pie-chart.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-pie-chart.html)
 
 
 

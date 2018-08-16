@@ -1,6 +1,6 @@
 # Selection for Bar Chart
 
-![](../../.gitbook/assets/ezgif.com-video-to-gif-5.gif)
+![](../../../.gitbook/assets/ezgif.com-video-to-gif-5.gif)
 
 ### How to use
 
@@ -26,7 +26,8 @@ chart.interaction('interval-select', {
   cancelable: {Boolean},
   onStart: {Function}, 
   onEnd: {Function}, 
-  mode: {String}
+  mode: {String},
+  defaultSelected: {Object}
 });
 ```
 
@@ -41,6 +42,7 @@ chart.interaction('interval-select', {
 | `onStart` | Function | null | The callback after the start event is triggered. |
 | `onEnd` | Function | null | The callback after the end event is triggered. |
 | `mode` | String | 'shape' | The default is 'shape', that is, hitting the bar will trigger the interaction. Another optional value is 'range', which means that the selected interaction is triggered as long as the concentration point falls within a certain x-direction range of the bar. |
+| `defaultSelected` | Object | null | If you want shape to be selected when chart inited, you can pass in the shape value to `defaultSelected`. |
 
 #### `onStart` callback
 

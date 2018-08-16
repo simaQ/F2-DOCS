@@ -1,6 +1,6 @@
 # Require on demand
 
-F2 is designed for mobile device, therefore the package size is very important. F2 has modular structure provides best tree-shaking results and package size optimization. 
+F2 is designed for mobile visualization, therefore the package size is very important. F2 has modular structure provides  package size optimization. 
 
 ### How to require on demand
 
@@ -22,7 +22,7 @@ const Core = require('@antv/f2/lib/core');
 
 This library contains the core processing logic of grammar of graphics, which contains the following:
 
-* `Chart`
+* `Chart`: Chart Class
 * `Geom`: The parent class of geometry, only contains the core processing of data, without any implementation of specific geometries such as line, area, bar i.e.
 * `Attr`: Attributes classes of charts, such as position, color, shape and size.
 * `Scale`: Only container the Linear, Cat and Identity these three basic types.

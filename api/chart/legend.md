@@ -2,7 +2,7 @@
 
 The legend for F2 is determined by the [color](https://antv.gitbook.io/f2/api/geometry#color) mapping. When the data mapped to color is a cat scale\(for discrete ordinal \(ordered\) or categorical \(unordered\) data\), a legend is generated.
 
-![](../.gitbook/assets/group-7.png)
+![](../../.gitbook/assets/group-7.png)
 
 ### How to Register Legend Plugin
 
@@ -101,7 +101,7 @@ chart.legend({
 
 #### Custom `maker`
 
-![](../.gitbook/assets/image%20%2824%29.png)
+![](../../.gitbook/assets/image%20%2825%29.png)
 
 The following describes the specific use of the `marker`：
 
@@ -135,7 +135,7 @@ chart.legend({
 
 The following code draws a marker shown below: 
 
-![](../.gitbook/assets/image%20%2836%29.png)
+![](../../.gitbook/assets/image%20%2837%29.png)
 
 ```javascript
 chart.legend('city', {
@@ -172,7 +172,7 @@ chart.legend({
 
 The Legend item implement the following interface，the image below will help you better understand:
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2834%29.png)
 
 ```javascript
 {
@@ -195,7 +195,7 @@ The Legend item implement the following interface，the image below will help yo
 
 For example, use the custom legend feature to define legend items as follows:
 
-![](../.gitbook/assets/image%20%2839%29.png)
+![](../../.gitbook/assets/image%20%2840%29.png)
 
 ```javascript
 chart.legend({
@@ -223,7 +223,7 @@ You can use the custom legend feature to customize the display content and style
 
 Below is a demo, you can click on the legend to control the display and hide of the corresponding geometry，[Complete code](https://antv.alipay.com/zh-cn/f2/3.x/demo/legend/custom.html).
 
-![](../.gitbook/assets/gif1111%20%282%29.gif)
+![](../../.gitbook/assets/gif1111%20%282%29.gif)
 
 ```javascript
 chart.legend({
