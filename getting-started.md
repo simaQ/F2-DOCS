@@ -17,7 +17,7 @@ Now that we have a canvas we can use, we need to include F2 in our page.
 
 Now, we can create a chart:
 
-* Instantiate the `Chart` class. To do this, we need to pass in the node, id, or 2d context of the canvas of where we want to draw the chart.
+* **Instantiate the `Chart` class**. To do this, we need to pass in the node, id, or 2d context of the canvas of where we want to draw the chart.
 
 ```javascript
 // Any of the following formats may be used, just choose one!
@@ -43,7 +43,7 @@ const chart = new F2.Chart({
 });
 ```
 
-* then relate with data. The data below shows the different types of game's sales.
+* **then relate with data**. The data below shows the different types of game's sales.
 
 ```javascript
 const data = [ 
@@ -57,13 +57,13 @@ const data = [
 chart.source(data); // load the data
 ```
 
-* Draw the bar chart.
+* **Draw the bar chart.**
 
 ```javascript
 chart.interval().position('genre*sold').color('genre');
 ```
 
-* Render! And you must call it.
+* **Render!** And you must call it.
 
 ```javascript
 chart.render();
