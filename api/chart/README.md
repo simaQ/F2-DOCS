@@ -150,6 +150,14 @@ See [Plugin](https://antv.gitbook.io/f2/developer/plugin) for more details about
 * description: whether to limit the geometry to the plot area, often used in the interaction of the chart, see [demo](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/x-pan.html)
 * default: false
 
+### `syncY`
+
+* type: `Boolean`
+* description: whether to unify the range of all y axes's data, it is used for charts with multiple y axis.
+* default: false
+
+See [demo](https://antv.alipay.com/zh-cn/f2/3.x/demo/other/multiple-y.html).
+
 ## Methods
 
 ### `chart.get()`
