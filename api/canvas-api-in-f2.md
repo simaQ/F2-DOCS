@@ -18,6 +18,28 @@ Since F2 use html5 canvas as its renderer, all charts drawn support the attribut
 | `globalOpacity` | same as `opacity`. |
 | `globalCompositionOperation` |  sets the type of compositing operation to apply when drawing new shapes, where type is a string identifying which of the compositing or blending mode operations to use. See [MDN](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation). |
 
+### Gradient Color
+
+For the convenience of users, F2 provides support for two types of gradient color:
+
+**Linear gradient**
+
+![](../.gitbook/assets/snip20180819_118.png)
+
+```javascript
+// example
+stroke: 'l(90) 0:#ffffff 0.5:#7ec2f3 1:#1890ff'
+```
+
+**Radial gradient**
+
+![](../.gitbook/assets/snip20180819_120.png)
+
+```javascript
+// example
+fill: 'r(0.5,0.5,0.1) 0:#ffffff 1:#1890ff'
+```
+
 ### Line Style
 
 | Name | Description |
@@ -41,4 +63,6 @@ Since F2 use html5 canvas as its renderer, all charts drawn support the attribut
 | `fontVariant` | specifies whether or not a text should be displayed in a small-caps font. The value can be set same as css property [font-variant](https://www.w3schools.com/cssref/pr_font_font-variant.asp). |
 | `lineHeight` | specifies the height of a line. The value can be set same as css property [line-height](https://www.w3schools.com/cssref/pr_dim_line-height.asp). |
 | `roate` | rotation angle for text, should be a radian value. |
+
+
 

@@ -164,11 +164,12 @@ chart.line().color('fieldName*value', (type, value) => { // multiple parameters,
 At this time, value can be:
 
 * The data field mapped to the color attribute. If the field name does not exist in the data, it will be parsed as a constant. This time, the default color provided by F2 will be used.
-* also can be a specific color value, such as 'red', '\#ddd', '\#dddddd', 'rgb\(255, 10, 30\)'.
+* also can be a specific color value, such as 'red', '\#ddd', '\#dddddd', 'rgb\(255, 10, 30\)' or `'l(0) 0:#ffffff 0.5:#7ec2f3 1:#1890ff'`.
 
 ```javascript
 chart.point().position('x*y').color('x'); // use the built-in color to map the data field of x-axis
 chart.point().position('x*y').color('red'); // all points are mapped to red
+chart.area().position('x*y').color('l(0) 0:#ffffff 0.5:#7ec2f3 1:#1890ff'); // fill a gradient
 ```
 
 #### **color\(fieldName, colors\)**
