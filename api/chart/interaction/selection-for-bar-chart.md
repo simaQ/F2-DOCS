@@ -74,5 +74,7 @@ onEnd(ev) {
 }
 ```
 
-### Demo:[https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-bar-chart.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-bar-chart.html)
+### Demo
+
+[https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-bar-chart.html](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-bar-chart.html)
 
