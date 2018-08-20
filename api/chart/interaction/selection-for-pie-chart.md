@@ -10,7 +10,7 @@ require('@antv/f2/lib/interaction/pie-select'); // require the interaction
 
 // ... create a chart instance
 
-// call the interaction, should be call before chart.render()
+// call the interaction
 chart.interaction('pie-select');
 ```
 
@@ -40,7 +40,7 @@ chart.interaction('pie-select', {
 | `cancelable` | Boolean | true | After the shape is selected, click again to allow unchecked. The default is true, indicating that it will be unchecked. |
 | `onStart` | Function | null | The callback after the start event is triggered. |
 | `onEnd` | Function | null | The callback after the event\('touchend'\) is triggered.  |
-| `defaultSelected` | Object | null | If you want shape to be selected when chart inited, you can pass in the shape value to `defaultSelected`, see [demo](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-pie-chart.html). |
+| `defaultSelected` | Object | null | If you want shape to be selected when chart inited, you can pass in the shape value to `defaultSelected`, see [demo](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/selection-for-pie-chart.html). **If you need to use this property**, **please call the method after the `chart.render()` .** |
 
 #### `onEnd` callback
 
