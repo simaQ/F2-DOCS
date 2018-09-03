@@ -35,6 +35,16 @@ Close all axes.
 | `position` | String | `'left'` | Configuration for the position of **the Y-axis**. X-axis defaults to 'bottom', the position of y-axis can be set to 'left' or 'right'. |
 | `top` | Boolean | `false` | Used to adjust the layer level. `true` represents the top layer level, `false` means the bottom layer level. |
 
+**`line`, `grid`, `label`, `tickLine` all have a property `top` which is used to adjust the display layer, `true` represents the top layer, `false` means the bottom layer level.**
+
+```javascript
+chart.axis('xFieldName', {
+  line: {
+    top: true
+  }
+});
+```
+
 **Note: When grid and label are callback functions, the return values must be an object.**
 
 ```javascript
