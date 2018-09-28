@@ -30,13 +30,60 @@ chart.scrollBar({
 
 ### Configuration
 
-| Name | Type | Default | Description |
-| :--- | :--- | :--- | :--- |
-| `mode` | String | 'x' | The direction of the scroll bar, optional value includes 'x', 'y', 'xy'. |
-| `xStyle` | Object | `see below` | The style for scroll bar in  x direction:   |
-| `yStyle` | Obect | see below | The style for scroll bar in y direction:  |
-
-* `xStyle` default value:
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Default</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>mode</code>
+      </td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">'x'</td>
+      <td style="text-align:left">The direction of the scroll bar, optional value includes 'x', 'y', 'xy'.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>xStyle</code>
+      </td>
+      <td style="text-align:left">Object</td>
+      <td style="text-align:left"><code>see below</code>
+      </td>
+      <td style="text-align:left">
+        <p>The style for scroll bar in x direction:</p>
+        <ul>
+          <li><code>backgroundColor</code>: the background color for scroll bar</li>
+          <li><code>fillerColor</code>: the color for range bar</li>
+          <li><code>size</code>: the size of scroll bar</li>
+          <li><code>lineCap</code>: determines how the end points in a line are drawn</li>
+          <li><code>offsetX</code>: the offset value of scroll bar in x-axis direction</li>
+          <li><code>offsetY</code>: the offset value of scroll bar in y-axis direction</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>yStyle</code>
+      </td>
+      <td style="text-align:left">Obect</td>
+      <td style="text-align:left">see below</td>
+      <td style="text-align:left">
+        <p>The style for scroll bar in y direction:</p>
+        <ul>
+          <li><code>backgroundColor</code>: the background color for scroll bar</li>
+          <li><code>fillerColor</code>: the color for range bar</li>
+          <li><code>size</code>: the size of scroll bar</li>
+          <li><code>lineCap</code>: determines how the end points in a line are drawn</li>
+          <li><code>offsetX</code>: the offset value of scroll bar in x-axis direction</li>
+          <li><code>offsetY</code>: the offset value of scroll bar in y-axis direction</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>* `xStyle` default value:
 
 ```javascript
 {

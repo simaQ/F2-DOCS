@@ -37,30 +37,175 @@ chart.tooltip({
 });
 ```
 
-| **Name** | **Type** | **Default** | **Description** |
-| :--- | :--- | :--- | :--- |
-| `alwaysShow` | Boolean | false | Whether the tooltip is still show when the touch area is not in the chart.It can be set to be `true` to preserve displaying. |
-| `offsetX` | Number | 0 | Tooltip offset in x direction. |
-| `offsetY` | Number | 0 | Tooltip offset in y direction. |
-| `triggerOn` | String / Array | \[ 'touchstart', 'touchmove' \] | The event that will trigger tooltip.  |
-| `triggerOff` | String / Array | 'touchend' | The event that will hide tooltip. |
-| `showTitle` | Boolean | false | Wether to show the title. |
-| `showCrosshairs` | Boolean |  | Wether to show the tooltip crosshairs.  The default value of different charts is different, point, line, area and path will show by default. |
-| `crosshairsStyle` | Object |  | Style of the crosshairs line, default setting is: `{     stroke: 'rgba(0, 0, 0, 0.25)',         lineWidth: 2   }` |
-| `showTooltipMarker` | Boolean | true | Wether to display tooltipMarker. |
-| `tooltipMarkerStyle` | Object |  | Style of the tooltipMarker. |
-| `background` | Object |  | The background style of tooltip content box.  |
-| `titleStyle` | Object |  | Style for tooltip's title, invalid if showTitle is `false.` |
-| `nameStyle` | Object |  | Style for each tooltip item's name part. |
-| `valueStyle` | Object |  | Style for each tooltip item's value part. |
-| `showItemMarker` | Boolean | true | Wether to show the each tooltip item's marker. |
-| `itemMarkerStyle` | Object |  | Style for each tooltip item's marker. |
-| `custom` | Boolean | false | Wether to custom the tooltip. See [custom tooltip](https://antv.gitbook.io/f2/api/tooltip#custom-tooltip). |
-| `onShow` | Function |  | Callback when the tooltip show. See [callback](https://antv.gitbook.io/f2/api/tooltip#onshow-callback). |
-| `onHide` | Function |  | Callback when the tooltip hide. See [callback](https://antv.gitbook.io/f2/api/tooltip#onhide-callback). |
-| `onChange` | Function |  | Callback when the tooltip content change. See [callback](https://antv.gitbook.io/f2/api/tooltip#onchange-callback). |
-
-#### Tooltip Item Interface
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Name</b>
+      </th>
+      <th style="text-align:left"><b>Type</b>
+      </th>
+      <th style="text-align:left"><b>Default</b>
+      </th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>alwaysShow</code>
+      </td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left">false</td>
+      <td style="text-align:left">Whether the tooltip is still show when the touch area is not in the chart.It
+        can be set to be <code>true</code> to preserve displaying.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>offsetX</code>
+      </td>
+      <td style="text-align:left">Number</td>
+      <td style="text-align:left">0</td>
+      <td style="text-align:left">Tooltip offset in x direction.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>offsetY</code>
+      </td>
+      <td style="text-align:left">Number</td>
+      <td style="text-align:left">0</td>
+      <td style="text-align:left">Tooltip offset in y direction.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>triggerOn</code>
+      </td>
+      <td style="text-align:left">String / Array</td>
+      <td style="text-align:left">[ 'touchstart', 'touchmove' ]</td>
+      <td style="text-align:left">The event that will trigger tooltip.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>triggerOff</code>
+      </td>
+      <td style="text-align:left">String / Array</td>
+      <td style="text-align:left">'touchend'</td>
+      <td style="text-align:left">The event that will hide tooltip.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>showTitle</code>
+      </td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left">false</td>
+      <td style="text-align:left">Wether to show the title.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>showCrosshairs</code>
+      </td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wether to show the tooltip crosshairs. The default value of different
+        charts is different, point, line, area and path will show by default.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>crosshairsStyle</code>
+      </td>
+      <td style="text-align:left">Object</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>Style of the crosshairs line, default setting is:</p>
+        <p><code> { </code>
+        </p>
+        <p><code>    stroke: &apos;rgba(0, 0, 0, 0.25)&apos;,     </code>
+        </p>
+        <p><code>    lineWidth: 2 </code>
+        </p>
+        <p><code>  }</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>showTooltipMarker</code>
+      </td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left">true</td>
+      <td style="text-align:left">Wether to display tooltipMarker.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>tooltipMarkerStyle</code>
+      </td>
+      <td style="text-align:left">Object</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Style of the tooltipMarker.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>background</code>
+      </td>
+      <td style="text-align:left">Object</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">The background style of tooltip content box.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>titleStyle</code>
+      </td>
+      <td style="text-align:left">Object</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Style for tooltip's title, invalid if showTitle is <code>false.</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>nameStyle</code>
+      </td>
+      <td style="text-align:left">Object</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Style for each tooltip item's name part.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>valueStyle</code>
+      </td>
+      <td style="text-align:left">Object</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Style for each tooltip item's value part.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>showItemMarker</code>
+      </td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left">true</td>
+      <td style="text-align:left">Wether to show the each tooltip item's marker.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>itemMarkerStyle</code>
+      </td>
+      <td style="text-align:left">Object</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Style for each tooltip item's marker.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>custom</code>
+      </td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left">false</td>
+      <td style="text-align:left">Wether to custom the tooltip. See <a href="https://antv.gitbook.io/f2/api/tooltip#custom-tooltip">custom tooltip</a>.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>onShow</code>
+      </td>
+      <td style="text-align:left">Function</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Callback when the tooltip show. See <a href="https://antv.gitbook.io/f2/api/tooltip#onshow-callback">callback</a>.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>onHide</code>
+      </td>
+      <td style="text-align:left">Function</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Callback when the tooltip hide. See <a href="https://antv.gitbook.io/f2/api/tooltip#onhide-callback">callback</a>.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>onChange</code>
+      </td>
+      <td style="text-align:left">Function</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Callback when the tooltip content change. See <a href="https://antv.gitbook.io/f2/api/tooltip#onchange-callback">callback</a>.</td>
+    </tr>
+  </tbody>
+</table>#### Tooltip Item Interface
 
 The picture below shows the structure of tooltip content, it includes title and a group of items, each item consists of marker, name and value.
 

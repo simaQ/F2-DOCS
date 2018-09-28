@@ -12,7 +12,7 @@ Now that we have a canvas we can use, we need to include F2 in our page.
 
 ```markup
 <!-- online -->
-<script src="https://gw.alipayobjects.com/os/antv/assets/f2/3.2.0/f2.js"></script>
+<script src="https://gw.alipayobjects.com/os/antv/assets/f2/3.2.3/f2.js"></script>
 ```
 
 Now, we can create a chart:

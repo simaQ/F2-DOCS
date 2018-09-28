@@ -25,17 +25,99 @@ Close all axes.
 * `field`: String type, the data field name corresponding to the axis
 * `config`: Object type,  configuration for the axis. It can be used to configure each component of the axis: include label, line, tick, tickLine and grid.The properties included are as follows:
 
-| **Name** | **Type** | **Default** | **Description** |
-| :--- | :--- | :--- | :--- |
-| `line` | Object / null | `{ stroke: '#e8e8e8', lineWidth: 1 }` | The axis line's configuration. **The axis line is not displayed when `line` set to `null`**. It supports all html5 canvas's line attributes, see [canvas](https://antv.gitbook.io/f2/api/canvas-api-in-f2) for more details. |
-| `labelOffset` | Number | `7.5` | The distance between the axis label and axis line |
-| `grid` | Object/Function/null | `{ type: 'line', stroke: '#e8e8e8', lineWidth: 1, lineDash: [ 2 ] }` | The axis grid's configuration. The grid is not displayed when `grid` is set to `null`. It supports all html5 canvas's line attributes, see [canvas](https://antv.gitbook.io/f2/api/canvas-api-in-f2) for more details.If gird is a function type, see [callback](https://antv.gitbook.io/f2/api/axis#creating-custom-gird) |
-| `tickLine` | Object/null | `null` | The configuration for style of the tickLine in axis. The tickLine of axis is not displayed when `tickLine` is set to `null`. It supports all html5 canvas's line attributes, see [canvas](https://antv.gitbook.io/f2/api/canvas-api-in-f2) for more details. |
-| `label` | Object/Function/null | `{ fill: '#808080', fontSize: 10 }` | Configuration for label of the axis. The labek of the axis is not displayed when `label` is set to `null`. It supports all  html5 canvas's attributes, see [canvas](https://antv.gitbook.io/f2/api/canvas-api-in-f2) for more details.If label is a function type, see [callback](https://antv.gitbook.io/f2/api/axis#creating-custom-label) |
-| `position` | String | `'left'` | Configuration for the position of **the Y-axis**. X-axis defaults to 'bottom', the position of y-axis can be set to 'left' or 'right'. |
-| `top` | Boolean | `false` | Used to adjust the layer level. `true` represents the top layer level, `false` means the bottom layer level. |
-
-**`line`, `grid`, `label`, `tickLine` all have a property `top` which is used to adjust the display layer, `true` represents the top layer, `false` means the bottom layer level.**
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Name</b>
+      </th>
+      <th style="text-align:left"><b>Type</b>
+      </th>
+      <th style="text-align:left"><b>Default</b>
+      </th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>line</code>
+      </td>
+      <td style="text-align:left">Object / null</td>
+      <td style="text-align:left"><code>{ stroke: &apos;#e8e8e8&apos;, lineWidth: 1 }</code>
+      </td>
+      <td style="text-align:left">The axis line's configuration. <b>The axis line is not displayed when <code>line</code> set to <code>null</code></b>.
+        It supports all html5 canvas's line attributes, see <a href="https://antv.gitbook.io/f2/api/canvas-api-in-f2">canvas</a> for
+        more details.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>labelOffset</code>
+      </td>
+      <td style="text-align:left">Number</td>
+      <td style="text-align:left"><code>7.5</code>
+      </td>
+      <td style="text-align:left">The distance between the axis label and axis line</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>grid</code>
+      </td>
+      <td style="text-align:left">Object/Function/null</td>
+      <td style="text-align:left"><code>{ type: &apos;line&apos;, stroke: &apos;#e8e8e8&apos;, lineWidth: 1, lineDash: [ 2 ] }</code>
+      </td>
+      <td style="text-align:left">
+        <p>The axis grid's configuration. The grid is not displayed when <code>grid</code> is
+          set to <code>null</code>. It supports all html5 canvas's line attributes,
+          see <a href="https://antv.gitbook.io/f2/api/canvas-api-in-f2">canvas</a> for
+          more details.</p>
+        <p>If gird is a function type, see <a href="https://antv.gitbook.io/f2/api/axis#creating-custom-gird">callback</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>tickLine</code>
+      </td>
+      <td style="text-align:left">Object/null</td>
+      <td style="text-align:left"><code>null</code>
+      </td>
+      <td style="text-align:left">The configuration for style of the tickLine in axis. The tickLine of axis
+        is not displayed when <code>tickLine</code> is set to <code>null</code>. It
+        supports all html5 canvas's line attributes, see <a href="https://antv.gitbook.io/f2/api/canvas-api-in-f2">canvas</a> for
+        more details.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>label</code>
+      </td>
+      <td style="text-align:left">Object/Function/null</td>
+      <td style="text-align:left"><code>{ fill: &apos;#808080&apos;, fontSize: 10 }</code>
+      </td>
+      <td style="text-align:left">
+        <p>Configuration for label of the axis. The labek of the axis is not displayed
+          when <code>label</code> is set to <code>null</code>. It supports all html5
+          canvas's attributes, see <a href="https://antv.gitbook.io/f2/api/canvas-api-in-f2">canvas</a> for
+          more details.</p>
+        <p>If label is a function type, see <a href="https://antv.gitbook.io/f2/api/axis#creating-custom-label">callback</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>position</code>
+      </td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left"><code>&apos;left&apos;</code>
+      </td>
+      <td style="text-align:left">Configuration for the position of<b> the Y-axis</b>. X-axis defaults to
+        'bottom', the position of y-axis can be set to 'left' or 'right'.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>top</code>
+      </td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left"><code>false</code>
+      </td>
+      <td style="text-align:left">Used to adjust the layer level. <code>true</code> represents the top layer
+        level, <code>false</code> means the bottom layer level.</td>
+    </tr>
+  </tbody>
+</table>**`line`, `grid`, `label`, `tickLine` all have a property `top` which is used to adjust the display layer, `true` represents the top layer, `false` means the bottom layer level.**
 
 ```javascript
 chart.axis('xFieldName', {
