@@ -153,7 +153,7 @@ chart.legend('city', {
 
 #### `onClick` callback
 
-See [demo](https://antv.alipay.com/zh-cn/f2/3.x/demo/legend/custom.html).
+See [demo](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/legend-custom.html).
 
 ```javascript
 chart.legend({

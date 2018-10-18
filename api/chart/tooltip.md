@@ -282,7 +282,7 @@ chart.tooltip({
 
 #### `onChange` callback
 
-It will trigger when the tooltip's content changed. Usually combined with the `custom` attribute for custom tooltip\(TODO\).
+It will trigger when the tooltip's content changed. Usually combined with the `custom` attribute for custom tooltip.
 
 ```javascript
 chart.tooltip({
@@ -446,7 +446,7 @@ chart.tooltip({
 
 | Demo | demo |
 | :--- | :--- |
-| [HTML tooltip](https://gw.alipayobjects.com/zos/rmsportal/GXqFyFmzhrVvJeWNSHDL.png) | ![](https://gw.alipayobjects.com/zos/rmsportal/GXqFyFmzhrVvJeWNSHDL.png) |
+| [HTML tooltip](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/tooltip-custom.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/GXqFyFmzhrVvJeWNSHDL.png) |
 | [showTooltip\(\)](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/tooltip-showTooltip.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/xxBHLpazEZJgfEkSrdZj.png) |
 | [styling](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/tooltip-style.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/oLwGTmcnQLqzvfigSwoO.png) |
 | [tooltip with title](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/tooltip-showTitle.html) | ![](https://gw.alipayobjects.com/zos/rmsportal/AdLPFtRaMxXIATwBAKKx.png) |

@@ -147,7 +147,7 @@ See [Plugin](https://antv.gitbook.io/f2/developer/plugin) for more details about
 ### `limitInPlot`
 
 * type: `Boolean`
-* description: whether to limit the geometry to the plot area, often used in the interaction of the chart, see [demo](https://antv.alipay.com/zh-cn/f2/3.x/demo/interaction/x-pan.html)
+* description: whether to limit the geometry to the plot area, often used in the interaction of the chart.
 * default: false
 
 ### `syncY`

@@ -174,7 +174,7 @@ If you want to change the axis label to include information about the data type,
 
 If the callback returns `null` or `undefined` the label and the associated grid line will be hidden.
 
-See detailed demo: [here](https://antv.alipay.com/zh-cn/f2/3.x/demo/axis/label-callback.html).
+See detailed demo: [here](https://antv.alipay.com/zh-cn/f2/3.x/demo/component/axis-label-callback.html).
 
 ```javascript
 chart.axis('value', {

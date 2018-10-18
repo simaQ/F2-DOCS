@@ -161,7 +161,7 @@ The global options for the chart guide tag is defined in F2.Global.guide.tag.
 | `position` | Array/Function |  | Position of the guide tag, see detail usage [here](https://antv.gitbook.io/f2/api/guide#start-end-position-usage). |
 | `content` | String |  | tag content, if you want a text wrapping, just write '\n' in the text, such as 'maximum \n200'. |
 | `direct` | String | 'tl' | [direction](https://antv.gitbook.io/f2/api/guide#direct) of tag, if `autoAdjust is true,`when the tag is outside the chart \[plot\]\(todo\) area, the direct will be automatically corrected and guaranteed to be in the plot area.  |
-| `autoAdjust` | Boolean | true | If value is `true`, when the tag is outside the chart [plot](todo) area\(todo\), the direct will be automatically corrected and guaranteed to be in the plot area. |
+| `autoAdjust` | Boolean | true | If value is `true`, when the tag is outside the chart [plot](https://antv.gitbook.io/f2/~/edit/drafts/-LP3rGQNp1gYGlOMY4Cr/api/chart#appendpadding) area, the direct will be automatically corrected and guaranteed to be in the plot area. |
 | `side` | Number | 4 | The length of tag arrow. |
 | `style` | Object |  | text style |
 | `offsetX` | Number | 0 | offset of guide tag in x-axis |

@@ -41,7 +41,7 @@ $ npm install @antv/f2
 
 ### All the chart types you want
 
-With the power of grammar of graphics, F2 supports data-driven [50+ chart types](https://antv.alipay.com/zh-cn/f2/3.x/api/index.html)\(the amount can be even more, which is depended on you\) including classical charts such as line, column/bar chart, pie chart, scatter plot, gauges, etc. Additionally, F2 also provides feature-riched chart components, such as Tooltip, Legend and Guide.
+With the power of grammar of graphics, F2 supports data-driven [50+ chart types](https://antv.alipay.com/zh-cn/f2/3.x/demo/index.html)\(the amount can be even more, which is depended on you\) including classical charts such as line, column/bar chart, pie chart, scatter plot, gauges, etc. Additionally, F2 also provides feature-riched chart components, such as Tooltip, Legend and Guide.
 
 ### Flexible and Interactive
 
