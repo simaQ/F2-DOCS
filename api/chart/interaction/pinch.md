@@ -16,7 +16,7 @@ require('@antv/f2/lib/interaction/pinch'); // require the interaction
 chart.interaction('pinch');
 ```
 
-### Configuration options {#configuration-options}
+### Configuration options <a id="configuration-options"></a>
 
 ```javascript
 chart.interaction('pinch', {

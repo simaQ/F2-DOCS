@@ -133,7 +133,7 @@ chart.interval().position('fruit*price');
 chart.render();
 ```
 
-![](../../.gitbook/assets/image%20%2838%29.png)
+![](../../.gitbook/assets/image%20%2839%29.png)
 
 ### `color()`
 
@@ -198,7 +198,7 @@ chart.area().position('x*y').color('l(0) 0:#ffffff 0.5:#7ec2f3 1:#1890ff'); // f
 
 * Colors can also be a callback function, the parameters of the callback are the data field values. If the function is going to map multiple data fields, parameters will be passed in the declared order, for example:
 
-![](../../.gitbook/assets/image%20%2816%29.png)
+![](../../.gitbook/assets/image%20%2817%29.png)
 
 ```javascript
 const data = [
@@ -283,7 +283,7 @@ chart.point().position('x*y').shape('rect'); // all the points's shapes are rect
 
   * `shapes` can also be a callback function, the parameters of the callback are the data field values. If the function is going to map multiple data fields, parameters will be passed in the declared order, for example:
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](../../.gitbook/assets/image%20%2815%29.png)
 
 ```javascript
 const data = [
@@ -364,7 +364,7 @@ chart.interval().adjust([{
 }]);
 ```
 
-![](../../.gitbook/assets/image%20%2815%29.png)
+![](../../.gitbook/assets/image%20%2816%29.png)
 
 ```javascript
   const data =[

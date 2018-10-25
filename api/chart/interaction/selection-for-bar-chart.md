@@ -14,7 +14,7 @@ require('@antv/f2/lib/interaction/interval-select'); // require the interaction
 chart.interaction('interval-select');
 ```
 
-### Configuration options {#configuration-options}
+### Configuration options <a id="configuration-options"></a>
 
 ```javascript
 chart.interaction('interval-select', {
@@ -143,7 +143,7 @@ onStart(ev) {
 }
 ```
 
-#### `onEnd` callback {#onend-callback}
+#### `onEnd` callback <a id="onend-callback"></a>
 
 ```javascript
 /**

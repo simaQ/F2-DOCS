@@ -8,7 +8,7 @@ In general, F2 chart includes Axis, Geometry, Tooltip, Legend, and may also incl
 
 The basic components of F2 chart is shown below:
 
-![](.gitbook/assets/image%20%284%29.png)
+![](.gitbook/assets/image%20%285%29.png)
 
 ### Terms
 

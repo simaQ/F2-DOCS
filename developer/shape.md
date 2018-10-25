@@ -125,7 +125,7 @@ The structure of points:
 
 ### Code Demo
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 ```javascript
 const Shape = F2.Shape;

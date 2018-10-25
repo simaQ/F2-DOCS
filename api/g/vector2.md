@@ -1,6 +1,6 @@
 # Vector2
 
-## F2.G.Vector2 {#f-2-g-matrix}
+## F2.G.Vector2 <a id="f-2-g-matrix"></a>
 
 `Vector2` provides operations for 2-dimensinal vectors.
 

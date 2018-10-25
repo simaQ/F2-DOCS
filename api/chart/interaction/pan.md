@@ -16,7 +16,7 @@ require('@antv/f2/lib/interaction/pan'); // require the interaction
 chart.interaction('pan');
 ```
 
-### Configuration options {#configuration-options}
+### Configuration options <a id="configuration-options"></a>
 
 ```javascript
 chart.interaction('pan', {

@@ -27,15 +27,15 @@ const { G } = F2;
 * [Canvas](https://antv.gitbook.io/f2/api/canvas)
 * [Group](https://antv.gitbook.io/f2/api/group)
 * [Shape](https://antv.gitbook.io/f2/api/shape)
-  * [Line](https://antv.gitbook.io/f2/api/shape#line)
-  * [Arc](https://antv.gitbook.io/f2/api/shape#arc)
-  * [Circle](https://antv.gitbook.io/f2/api/shape#circle)
-  * [Polygon](https://antv.gitbook.io/f2/api/shape#polygon)
-  * [Polyline](https://antv.gitbook.io/f2/api/shape#polyline)
-  * [Rect](https://antv.gitbook.io/f2/api/shape#rect)
-  * [Sector](https://antv.gitbook.io/f2/api/shape#sector)
-  * [Text](https://antv.gitbook.io/f2/api/shape#text)
-  * [Custom](https://antv.gitbook.io/f2/api/shape#custom)
+  * [Line](https://antv.gitbook.io/f2/api/g/shape#shape-line)
+  * [Arc](https://antv.gitbook.io/f2/api/g/shape#shape-arc)
+  * [Circle](https://antv.gitbook.io/f2/api/g/shape#shape-circle)
+  * [Polygon](https://antv.gitbook.io/f2/api/g/shape#shape-polygon)
+  * [Polyline](https://antv.gitbook.io/f2/api/g/shape#shape-circle-1)
+  * [Rect](https://antv.gitbook.io/f2/api/g/shape#shape-rect)
+  * [Sector](https://antv.gitbook.io/f2/api/g/shape#shape-sector)
+  * [Text](https://antv.gitbook.io/f2/api/g/shape#shape-text)
+  * [Custom](https://antv.gitbook.io/f2/api/g/shape#shape-custom)
 
 **Namespaces** 
 
@@ -44,7 +44,7 @@ const { G } = F2;
 
 ### Quick Look
 
-![](../../.gitbook/assets/image%20%2821%29.png)
+![](../../.gitbook/assets/image%20%2822%29.png)
 
 ```javascript
 <script src="https://unpkg.com/@antv/f2"></script>

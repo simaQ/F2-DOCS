@@ -429,7 +429,7 @@ const circle = new G.Shape.Circle({
 });
 ```
 
-### Shape.Polyline {#shape-circle}
+### Shape.Polyline <a id="shape-circle"></a>
 
 ```text
 new Shape.Polyline({

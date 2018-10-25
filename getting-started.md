@@ -69,11 +69,11 @@ chart.interval().position('genre*sold').color('genre');
 chart.render();
 ```
 
-![](.gitbook/assets/image%20%2818%29.png)
+![](.gitbook/assets/image%20%2819%29.png)
 
 It's that easy to get started using F2! From here you can explore more options that can help you customize your charts with scales, tooltip, axis, guides, legends and much more.
 
 There are many examples of F2 that are available in the AntV [demos](https://antv.alipay.com/zh-cn/f2/3.x/demo/index.html). You also can scan the QR code below to experience our demos on you phone.
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%287%29.png)
 

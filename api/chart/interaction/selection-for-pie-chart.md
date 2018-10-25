@@ -14,7 +14,7 @@ require('@antv/f2/lib/interaction/pie-select'); // require the interaction
 chart.interaction('pie-select');
 ```
 
-### Configuration options {#configuration-options}
+### Configuration options <a id="configuration-options"></a>
 
 ```javascript
 chart.interaction('pie-select', {
