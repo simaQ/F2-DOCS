@@ -189,7 +189,7 @@ require('@antv/f2/lib/coord/polar'); // require polar coordinate
 require('@antv/f2/lib/geom/adjust/stack'); // requre the type of data adjust
 ```
 
-### Visulization tool
+### Visualization tool
 
 For convenience, we provide UI-based require-on-demand packaging tool to help developers download the required charts and components. The usage is as follows:
 
