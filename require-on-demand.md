@@ -5,7 +5,7 @@ F2 is designed for mobile visualization, therefore the package size is very impo
 ### How to require on demand
 
 * STEP 1: Install F2
-* STEP 2: Require core library of F2\(**must be done\)**
+* STEP 2: Require core library of F2 \(**must be done\)**
 * STEP 3: Require modules what you want
 
 #### Install F2
@@ -61,7 +61,7 @@ require('@antv/f2/lib/geom/schema'); // only the box chart, stock chart are requ
 ```javascript
 require('@antv/f2/lib/coord/polar'); // polar coordinate
 
-require('@antv/f2/lib/coord/cartesian'); // Cartesian coordiante（already included in the core library）
+require('@antv/f2/lib/coord/cartesian'); // Cartesian coordinate（already included in the core library）
 ```
 
 **Axis**
@@ -171,7 +171,7 @@ require('@antv/f2/lib/interaction/pinch'); // chart pinch
 
 **ScrollBar**
 
-ScrollBar also serves as an plugin for chart.
+ScrollBar also serves as a plugin for chart.
 
 ```javascript
 const ScrollBar = require('@sntv/f2/lib/plugin/scroll-bar');
