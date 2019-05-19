@@ -149,7 +149,7 @@ canvas.createPNGStream().pipe(fs.createWriteStream(path.join(__dirname, 'pie.png
 
 ### Solution for device resolution
 
-The solution for resolution is simple: Assume that the pixel ratio of the current device is 2, then just set the pixelRation property when creating an F2 chart.
+The solution for resolution is simple: Assume that the pixel ratio of the current device is 2, then just set the pixelRatio property when creating an F2 chart.
 
 ```javascript
 const chart = new F2.Chart({
